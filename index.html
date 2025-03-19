@@ -10,6 +10,10 @@
     <canvas id="dotCanvas"></canvas>
     <script>
     const canvas = document.getElementById('dotCanvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const ctx = canvas.getContext('2d');
+
     canvas.addEventListener('touchstart', (e) => {
         e.preventDefault();
         // ...handle touch start...
@@ -19,6 +23,8 @@
         e.preventDefault();
         // ...handle touch move...
     }, { passive: false });
+
+    // ...restore or fix the dot drawing code...
     </script>
     <script src="script.js"></script>
 </body>

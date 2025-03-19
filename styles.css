@@ -1,0 +1,12 @@
+/* ...existing code... */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#dotCanvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
